@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "I am voting yes on this version of the Net Contribution Limit (NCL). My rationale is as follows:\n\n1. Establishing a clear, ratified definition of the NCL is critical for transparent governance and effective treasury management\n\n2. Establishing a NCL is required for withdrawals to be constitutional, and thus is necessary now.\n\n3. Currently, as DReps, we have two competing NCL proposals—one at 300 million and another at 350 million ADA. I support the 300 million ADA proposal because it aligns more closely with my fundamental belief that Cardano's expenditure should always remain below its income, ensuring fiscal prudence and long-term sustainability.\n\nHowever, my support for this proposal is accompanied by reservations:\n\n1. The projections and rationale discussed here https://forum.cardano.org/t/fundamental-critcism-of-the-budget-process/143519/15 indicate that even with an NCL set at 300 million ADA, Cardano’s treasury outflows may nearly match its inflows. This approach leaves minimal room for building a financial buffer, which is critical for long-term resilience. Historically, and based on conventional financial wisdom, maintaining a savings margin—approximately 10% annually—is prudent for sustained treasury growth and stability. Consequently, an NCL closer to 270–280 million ADA would be more appropriate and fiscally conservative, ensuring a stronger financial foundation.\n\n2. Additionally, the community's governance frameworks and democratic infrastructures remain relatively new and untested at managing significant expenditures responsibly. Given this reality, exercising greater caution and opting for a lower NCL threshold initially would be more prudent. This conservative approach would allow us to develop a demonstrable track record of effective financial governance before scaling our expenditures closer to projected income levels.\n\n3. Despite these reservations, the 300 million ADA option represents a meaningful step in the right direction compared to higher alternatives. Therefore, I support it as a foundational measure, while strongly advocating for further refinement and fiscal prudence in future governance cycles.\n\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
