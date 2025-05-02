@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "\nRationale for Supporting the 200M ADA NCL for 2025 as a Cardano DRep\n\nAs a Cardano Delegate Representative (DRep), I support the proposed 200M ADA Network Contribution Limit (NCL) for 2025. My decision is driven by a commitment to fiscal responsibility and the need for robust governance and vendor management processes to ensure the prudent use of public funds. At this stage, I believe the Cardano ecosystem’s governance mechanisms and organizational maturity are not sufficiently developed to responsibly manage the proposed 350M ADA allocation.\n\nA key concern is the lack of rigorous oversight and pushback in vendor management, particularly with Input Output Global (IOG). For context, Charles Hoskinson, co-founder of IOG, has stated that he personally funded Cardano’s development at an estimated $450M USD over seven years, equating to an average annual run rate of approximately $64M. While costs may have surely escalated, the proposed 350M ADA allocation—funded by public treasury resources—represents a significant increase, nearly doubling his historical spending level when Charles himself bore the financial burden. Of course, this is also taking him at his word on almost half a billion in spending. Without thorough scrutiny, this escalation raises questions about necessity and efficiency.\n\nIn April 2025, IOG’s “take it or leave it” stance on funding proposals further underscores the need for stronger governance processes. The Cardano governance function has a fiduciary duty to rigorously evaluate vendor proposals to ensure they are justified and cost-effective. Currently, the absence of a robust, independent review process limits our ability to validate the reasonableness of the proposed budget.\n\nWhile I assume good faith on the part of IOG and recognize their contributions as good actors in the ecosystem, public funds demand a higher standard of accountability. Until the Cardano governance framework develops more mature processes—such as expert-led reviews and competitive vendor evaluations—we must adopt a fiscally conservative approach to safeguard community resources.\n\nA lower NCL of 200M ADA provides a prudent framework for 2025. It encourages negotiation with vendors, fosters competitive bidding, and incentivizes cost-effective solutions without compromising essential development. Importantly, the Cardano community retains the flexibility to vote for an NCL increase later if additional funding is demonstrably necessary and governance processes have matured to manage it.\n\nConversely, an overly generous NCL risks wasteful spending due to inadequate oversight, regulatory capture, or insufficient vendor scrutiny. Once public funds are misallocated, they cannot be recovered, potentially undermining trust in Cardano’s governance and hindering long-term ecosystem growth.\n\nIn conclusion, the 200M ADA NCL strikes a responsible balance, aligning spending with the current maturity of Cardano’s governance and vendor management processes. This conservative approach mitigates risks while preserving the ability to adapt as our ecosystem evolves. I urge my fellow DReps and the Cardano community to support this limit to ensure fiscal discipline and uphold our collective responsibility to steward public funds wisely."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
