@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Vote: Lean Approve\n\nThis proposal addresses a real and persistent problem: critical Cardano infrastructure is often maintained by a small number of individuals with limited succession planning and inconsistent funding. While the ecosystem benefits enormously from this work, market incentives alone frequently underfund maintenance compared to new development.\n\nThe strongest aspect of the proposal is treasury suitability. Open-source maintenance is a classic public-good problem where ecosystem-wide benefits exceed the ability of individual maintainers to capture value. This is one of the more defensible uses of treasury resources.\n\nMy primary concern is execution. The proposal is attempting to create a governance and operational structure that does not yet have a delivery history. The quality of maintainer selection, reporting, oversight, and budget discipline will determine whether this becomes durable ecosystem infrastructure or simply another funding program. More importantly this proposal is submitted by the person who makes himself the largest single beneficiary of the funding.  The administration costs of the funding as a percentage of the ask are too high, and frankly this was almost a decision point for me.  It is a worthwhile endeavour which looks to be treated as a cash-cow by the admin choice.  To be blunt I don't want to see administration eating such a significant portion of any budget.\n\nOn balance, I believe the problem is real, the treasury rationale is strong, and the potential ecosystem benefits outweigh the risks. However, continued scrutiny of administrative costs, measurable outcomes, and treasury dependency will be necessary, and if it doesn't reduce as a percentage of budget I'll likely not approve on the next round.\n\nThis is not the highest-priority proposal competing for treasury capital, but it is a credible investment in ecosystem resilience and long-term sustainability."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
