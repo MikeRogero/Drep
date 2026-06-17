@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "As with every IO proposal this year - I DO NOT feel this went through a proper nor robust procurement process.  There is not enough pushback on the vendor from experts looking at a wholistic budget with prioritization, comparative cost benchmarks and KPIs.   We can not simply accept vendors submitting proposals direct to the treasury without oversight, pushback or inclusion in a total budget.\n\nHowever, I see the key flaw as how governance was designed, and the processes which have been built.  Blocking all progress on Cardano until that is done properly is not an option.\n\nIn looking at the proposal itself - I see many obvious problems in pricing, timing, KPIs, etc, due to the above - but I can not fix those by simply voting no.  Hydra itself is critical core infrastructure for the Cardano I believe we need to compete in this competitive marketplace, and thus I must vote to continue to fund and expand its functionality, even with the problems in the process and pricing.  I'm choosing the lesser evil by approving."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
